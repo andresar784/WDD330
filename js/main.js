@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Title of Your Page</title>
+<title>Week 1 activity</title>
 <script>
 </script>
 <style>
