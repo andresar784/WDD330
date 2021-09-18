@@ -1,5 +1,9 @@
+body {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
-  color: white;
-  text-align: center;
-  text
+  background-color: antiquewhite;
+  padding: 1em;
 }
