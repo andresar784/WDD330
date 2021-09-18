@@ -4,8 +4,9 @@ body {
 }
 
 h1 {
-  background-color: antiquewhite;
+  background-color: aquamarine;
   padding: 1em;
   font-family: verdana;
   font-size: 20px;
+  text-align: center;
 }
