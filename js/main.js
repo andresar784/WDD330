@@ -6,7 +6,7 @@ const links = [
   {
     label: "Week02",
     url: "week02/index.html"
-  },
+  }
 ]
 
 const list = document.getElementById("weeklist");
