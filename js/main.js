@@ -17,18 +17,18 @@ const list = document.getElementById("weeklist");
 
 for (let i=0; i<links.length; i++)
     {
-      let listitems = document.createElement("li");
+        let listitems = document.createElement("li");
         let anchor = document.createElement("a");
-        let img = document.createElement("img");
+        let label = document.createElement("label");
         
 
         
         anchor.setAttribute("href", links[i].url);
-        img.setAttribute("src", links[i].image);
-        img.setAttribute("class", "pressed");
+        label.innerHTML = links[i].label;
+        
         
         listitems.appendChild(anchor);
-        anchor.appendChild(img);
+        anchor.appendChild(label);
         list.appendChild(listitems);
         
         
