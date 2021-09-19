@@ -22,6 +22,10 @@ for (let i=0; i<links.length; i++)
         let label = document.createElement("label");
         list.setAttribute("label", links[i].label);
         anchor.setAttribute("href", links[i].url);
+      
+        listitems.appendChild(anchor);
+       
+        list.appendChild(listitems);
         
         
     }
