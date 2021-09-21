@@ -14,7 +14,7 @@ if(response === answer){
     alert(`Wrong! The correct answer was ${answer}`);
 }
 }
-
+alert(`Game Over, you scored ${score} point${score !== 1 ? 's' : ''}`);
 const question = "What is Superman's real name?"
 const answer = prompt(question);
 alert(`You answered ${answer}`);
