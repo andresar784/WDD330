@@ -33,7 +33,10 @@ function displayDate() {
 }
 let x = document.getElementById("myBtn");
 x.addEventListener("click", changeHTML);
-
+x.addddEventListener("mouseover", overButton);
 function changeHTML(){
   document.getElementById("myBtn").innerHTML = 'Clicked!';
+}
+function overButton(){
+  document.getElementById("myBtn").innerHTML = 'You are over the button!';
 }
