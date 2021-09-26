@@ -26,7 +26,7 @@ for (let i=0; i<links.length; i++){
         list.appendChild(listitems);
 }
 
-document.getElementById("myBtn").addEventListener("click", displayDate);
+const d = new Date();
 
 let x = document.getElementById("myBtn");
 x.addEventListener("click", displayDate);
@@ -35,7 +35,7 @@ x.addEventListener("mouseover", overButton);
 x.addEventListener("mouseout", outButton);
 
 function displayDate() {
-  document.getElementById("timetest").innerHTML = Date();
+  document.getElementById("timetest").innerHTML = d.toDateString();
 }
 function changeHTML(){
  document.getElementById("myBtn").innerHTML = 'Clicked!';
