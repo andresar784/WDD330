@@ -28,15 +28,15 @@ for (let i=0; i<links.length; i++){
 
 
 document.getElementById("myBtn").addEventListener("click", displayDate);
+function displayDate() {
+  document.getElementById("timetest").innerHTMl = Date();
+}
 let x = document.getElementById("myBtn");
-//x.addEventListener("click", displayDate);
 x.addEventListener("click", changeHTML);
 x.addEventListener("mouseover", overButton);
 x.addEventListener("mouseout", outButton);
 
-function displayDate() {
-  document.getElementById("timetest").innerHTMl = Date();
-}
+
 
 function changeHTML(){
   document.getElementById("myBtn").innerHTML = 'Clicked!';
