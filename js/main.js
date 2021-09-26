@@ -26,7 +26,7 @@ for (let i=0; i<links.length; i++){
         list.appendChild(listitems);
 }
 
-document.getElementById("myBtn").addEventListener("click", displayDate);
+document.getElementById("myBtn").addEventListener("mouseover", displayDate);
 
 function displayDate() {
   document.getElementById("timetest").innerHTMl = Date();
