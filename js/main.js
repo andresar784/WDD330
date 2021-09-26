@@ -27,7 +27,13 @@ for (let i=0; i<links.length; i++){
 }
 
 document.getElementById("myBtn").addEventListener("click", displayDate);
+
 function displayDate() {
   document.getElementById("timetest").innerHTML = Date();
 }
+let x = document.getElementById("myBtn");
+x.addEventListener("click", changeHTML);
 
+function changeHTML(){
+  document.getElementById("myBtn").innerHTML = 'Clicked!';
+}
