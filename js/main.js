@@ -27,9 +27,9 @@ for (let i=0; i<links.length; i++){
 }
 
 document.getElementById("myBtn").addEventListener("click", displayDate);
-
+const d = new Date();
 function displayDate() {
-  document.getElementById("timetest").innerHTML = Date();
+  document.getElementById("timetest").innerHTMl = d.toDateString();
 }
 let x = document.getElementById("myBtn");
 x.addEventListener("click", changeHTML);
