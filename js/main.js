@@ -38,9 +38,7 @@ function displayDate() {
 //x.addEventListener("mouseover", overButton);
 //x.addEventListener("mouseout", outButton);
 
-function displayDate() {
-  document.getElementById("timetest").innerHTMl = Date();
-}
+
 
 //function changeHTML(){
  // document.getElementById("myBtn").innerHTML = 'Clicked!';
