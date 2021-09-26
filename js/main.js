@@ -26,7 +26,7 @@ for (let i=0; i<links.length; i++){
         list.appendChild(listitems);
 }
 
-document.getElementById("myBtn").addEventListener("click", displayDate);
+
 const d = new Date();
 
 let x = document.getElementById("myBtn");
