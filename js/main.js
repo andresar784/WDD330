@@ -31,7 +31,9 @@ document.getElementById("myBtn").addEventListener("click", displayDate);
 function displayDate() {
   document.getElementById("timetest").innerHTMl = Date();
 }
-
+function displayDate() {
+  document.getElementById("timetest").innerHTML = Date();
+}
 //let x = document.getElementById("myBtn");
 
 //x.addEventListener("click", changeHTML);
