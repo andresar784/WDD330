@@ -29,14 +29,19 @@ for (let i=0; i<links.length; i++){
 document.getElementById("myBtn").addEventListener("click", displayDate);
 
 function displayDate() {
-  document.getElementById("timetest").innerHTML = Date(year, monthIndex, day, hours, minute);
+  document.getElementById("timetest").innerHTML = Date(year, monthIndex, day, hours, minutes);
 }
 let x = document.getElementById("myBtn");
 x.addEventListener("click", changeHTML);
 x.addEventListener("mouseover", overButton);
+x.addEventListener("mouseout", outButton);
+
 function changeHTML(){
   document.getElementById("myBtn").innerHTML = 'Clicked!';
 }
 function overButton(){
   document.getElementById("myBtn").innerHTML = 'You are over the button!';
+}
+function outButton(){
+  document.getElementById("myBtn").innerHTML = 'Try it';
 }
