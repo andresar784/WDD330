@@ -27,7 +27,7 @@ for (let i=0; i<links.length; i++){
 }
 
 
-const d = new Date();
+//const d = new Date();
 
 let x = document.getElementById("myBtn");
 x.addEventListener("click", displayDate);
