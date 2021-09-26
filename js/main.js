@@ -29,11 +29,11 @@ for (let i=0; i<links.length; i++){
 document.getElementById("myBtn").addEventListener("click", displayDate);
 
 function displayDate() {
-  document.getElementById("timetest").innerHTML = Date();
+  document.getElementById("timetest").innerHTML = Date(year, monthIndex, day, hours, minute);
 }
 let x = document.getElementById("myBtn");
 x.addEventListener("click", changeHTML);
-x.addddEventListener("mouseover", overButton);
+x.addEventListener("mouseover", overButton);
 function changeHTML(){
   document.getElementById("myBtn").innerHTML = 'Clicked!';
 }
