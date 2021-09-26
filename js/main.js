@@ -27,10 +27,9 @@ for (let i=0; i<links.length; i++){
 }
 
 
-//const d = new Date();
-
+document.getElementById("myBtn").addEventListener("click", displayDate);
 let x = document.getElementById("myBtn");
-x.addEventListener("click", displayDate);
+//x.addEventListener("click", displayDate);
 x.addEventListener("click", changeHTML);
 x.addEventListener("mouseover", overButton);
 x.addEventListener("mouseout", outButton);
