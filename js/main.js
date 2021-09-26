@@ -29,7 +29,7 @@ for (let i=0; i<links.length; i++){
 document.getElementById("myBtn").addEventListener("click", displayDate);
 
 function displayDate() {
-  document.getElementById("timetest").innerHTML = Date(year, monthIndex, day, hours, minutes);
+  document.getElementById("timetest").innerHTML = Date();
 }
 let x = document.getElementById("myBtn");
 x.addEventListener("click", changeHTML);
