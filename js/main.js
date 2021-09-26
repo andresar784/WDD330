@@ -12,22 +12,18 @@ const links = [
 
 const list = document.getElementById("weeklist");
 
-for (let i=0; i<links.length; i++)
-    {
+for (let i=0; i<links.length; i++){
+  
         let listitems = document.createElement("li");
         let anchor = document.createElement("a");
-        let label = document.createElement("label");
-        
-
-        
+        let label = document.createElement("label");  
+  
         anchor.setAttribute("href", links[i].url);
         label.innerHTML = links[i].label;
-        
-        
+                
         listitems.appendChild(anchor);
         anchor.appendChild(label);
         list.appendChild(listitems);
-        
-        
-    }
+}
+
 
