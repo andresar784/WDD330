@@ -1,5 +1,3 @@
-import 'bootstrap@4.6.0'
-
 const d = new Date();
 
 let x = document.getElementById("myBtn");
