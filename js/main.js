@@ -15,8 +15,6 @@ const links = [
     label: "Week04",
     url: "week04/index.html"
   },
-  
-  
 ]
 
 const list = document.getElementById("weeklist");
