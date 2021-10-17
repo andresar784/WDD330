@@ -34,7 +34,12 @@
         <p>When doing this, it can be useful to create what are known as breakpoints, which halt the progress of the code and allow us to view the value of different variables at that point in the program.</p>
         <p>The most basic form of debugging is to use the alert() method to show a dialog at certain points in the code. Because alert() stops a program from running until OK is clicked, it allows us to effectively put breakpoints in the code that let us check the value of variables at that point to see if they’re what we expect them to be.</p>
         <h5>Using the Console</h5>
-        <p></p>
+        <p>Most modern JavaScript environments have a console object that provides a number of methods for logging information and debugging.</p>
+        <p>We've already seen and used the console.log() method. This can be used to log the value of variables at different stages of the program, although it will not actually stop the execution of the 
+            program in the same way as alert() does</p>
+        <p>The console.trace() method will log an interactive stack trace in the console. This will show the functions that were called in the lead up to an 
+            exception occurring while the code is running.</p>
+        <p>Another useful methods include: console.count, console.dir, console.dirxml and console.table among others.</p>
         <p></p>
         <p></p>
         <p></p>
@@ -46,10 +51,6 @@
     <div class="container-fluid">
         
     </div>
-    
-   
-    
-   
-</body>
+    </body>
 </html>
 
