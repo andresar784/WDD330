@@ -27,7 +27,7 @@ const links = [
 
 const list = document.getElementById("weeklist");
 
-for (let i=0; i<links.length; i++){
+for (let i=0; i < links.length; i++){
   
         let listitems = document.createElement("li");
         let anchor = document.createElement("a");
