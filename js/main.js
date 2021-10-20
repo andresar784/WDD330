@@ -19,6 +19,10 @@ const links = [
     label: "Week05",
     url: "week05/index.html"
   },
+  {
+    label: "Week06",
+    url: "week06/index.html"
+  },
 ]
 
 const list = document.getElementById("weeklist");
