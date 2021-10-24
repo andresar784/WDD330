@@ -75,6 +75,7 @@ ul li.checked {
     color: #fff;
     text-decoration: line-through;
 }
+
 .far{
     position: absolute;
     right: 0;
@@ -83,6 +84,6 @@ ul li.checked {
 }
  
 .far:hover {
-    background-color: tomato;
+    background-color: rgb(33, 131, 57);
     color: white;
 }
