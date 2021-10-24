@@ -10,7 +10,6 @@ document.querySelector("#myInput").addEventListener("keydown", function(e) {
   }
 });
 
-//-------GETTING VALUES FROM INPUT TO ARRAY OF OBJECTS-------
 function addTodo() {
   const todoText = document.querySelector("#myInput").value;
 
