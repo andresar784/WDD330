@@ -64,10 +64,10 @@ ul li {
 }
 
 ul li:nth-child(odd){
-    background: rgb(65, 55, 55);
+    background: rgb(156, 204, 226);
 }
 ul :hover {
-    background: rgba(230, 80, 80, 0.583);
+    background: rgba(63, 122, 66, 0.583);
 }
 
 ul li.checked {
