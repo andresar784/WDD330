@@ -21,7 +21,7 @@ textButton.addEventListener('click', () => {
     },false);
 
     apiButton.addEventListener('click', () => {
-        fetch(apiURL)
+        fetch(textURL)
         .then( response => {
         outputDiv.innerHTML = 'Waiting for response...';
         if(response.ok) {
