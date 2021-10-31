@@ -2,7 +2,7 @@ const textButton = document.getElementById('number');
 const apiButton = document.getElementById('chuck');
 const outputDiv = document.getElementById('output');
 
-const textURL = 'http://numbersapi.com/random';
+const textURL = 'https://catfact.ninja/fact';
 const apiURL = 'https://api.chucknorris.io/jokes/random';
 
 
