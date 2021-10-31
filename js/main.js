@@ -28,7 +28,7 @@ const links = [
     url: "week07/index.html"
   },
 ]
-]
+
 
 const list = document.getElementById("weeklist");
 
