@@ -21,7 +21,7 @@ textButton.addEventListener('click', () => {
     },false);
 
     apiButton.addEventListener('click', () => {
-        fetch(textURL)
+        fetch(apiURL)
         .then( response => {
         outputDiv.innerHTML = 'Waiting for response...';
         if(response.ok) {
@@ -33,17 +33,3 @@ textButton.addEventListener('click', () => {
         .then( data => outputDiv.innerText = data.value )
         .catch( error => console.log('There was an error:', error))
         },false);
-
-        apiButton.addEventListener('click', () => {
-            fetch(apiURL)
-            .then( response => {
-            outputDiv.innerHTML = 'Waiting for response...';
-            if(response.ok) {
-            return response;
-            }
-            throw Error(response.statusText);
-            })
-            .then( response => response.json() )
-            .then( data => outputDiv.innerText = data.value )
-            .catch( error => console.log('There was an error:', error))
-            },false);
