@@ -67,6 +67,7 @@
         <p>The transition-duration property sets how long the transition will take: the duration of time it takes to go from the default state to the transitioned state. You can specify this either in seconds (s) or milliseconds (ms). 
             We’d like our animation to be fairly quick, so we’ll specify 0.2 seconds (0.2s), or 200 milliseconds (200ms). 200ms is generally considered the optimum time for a transition: anything slower will make the website seem slow, 
             drawing generally unwanted attention to what was supposed to be a subtle effect. Anything faster may be too subtle.</p>
+           
             <h6>The transition-timing-function Property</h6>
             <p>The transition-timing-function lets you control the pace of the transition in even more granular detail. Do you want your animation to start off slow and become faster, start off fast and end slower, 
                 advance at an even keel, or some other variation?</p>
@@ -81,16 +82,46 @@
              We don’t want our transition to start immediately, because that might be a bad user experience if the user accidentally 
              mouses through our ad on the way from one part of the document to the next. A 50ms delay is enough time to wait to be sure they are 
              intentionally hovering over our advertisement:</p>
-        <h5>Animation</h5>
+             <div class="box"></div>
+             <div class="box1"></div>
+             <div class="box2"></div>
+             <h5>Animation</h5>
         <P>Transitions animate elements over time. You can define starting and ending states, but there’s no fine-grained control over any intermediate states. CSS animations, unlike transitions,
              allow you to control each step of an animation via keyframes.</P>
         <h6>keyframes</h6>
         <p>A keyframe is a snapshot that defines a starting or end point of any smooth transition. With CSS transitions, we’re essentially limited to defining a first and a last keyframe.
              CSS animations allow us to add any number of keyframes in between, to guide our animation in more complex ways.</p>
-        
+        <p>To animate an element in CSS, you first create a named animation, then attach it to an element in that element’s property declaration block. Animations in themselves don’t do anything; 
+            in order to animate an element, you’ll need to associate the animation with that element.</p>
+        <p>To create an animation, use the @keyframes rule for IE10+ and FF16+</p>
+        <p>Inside each keyframe include the properties you want to animate, along with the animated values. The values will be smoothly interpolated by the browser’s animation engine between each keyframe.</p>
+        <p>Keyframes can be specified in any order; it’s the percentage values rather than the order of the declarations that determine the sequence of keyframes in the animation.</p>
+<h6>Animation Properties</h6>
+<p><em>animation-name</em></p>
+<p>This property is used to attach an animation (previously defined using the @keyframes syntax) to an element</p>
+<p><em>animation-duration</em></p>
+<p>The animation-duration property defines the length of time (in seconds or milliseconds) an animation takes to 
+    complete one iteration (all the way through, from 0% to 100%):</p>
+    <p>While animation-name is the only required animation property to create an animation, the animation-duration should be considered required to animate an element. Without declaring the duration it defaults to 0s, which is imperceptible, but still fires the animationstart and animationend events. 
+        The other animation properties, while they enable you to better control your animation, are optional.</p>
+        <p><em>animation-timing-function</em></p>
+        <p>Like the transition-timing-function property, the animation-timing-function determines how the animation will progress over its duration. 
+            The options are the same as for transition-timing-function: ease, linear, ease-in, ease-out, ease-in-out.</p>
+            <p><em>animation-iteration-count</em></p>
+            <p>The animation-iteration-count property lets you define how many times the animation will play through. The value is generally an integer, but you can also use numbers with decimal points (in which case, the animation will end partway through an iteration), 
+                or the value infinite for endlessly repeating animations.</p>
+                <p><em>animation-direction</em></p>
+                <p>When the animation iterates, it normally goes from the 0% to the 100% keyframe, jumping back to the 0% when it starts a new iteration (if the animation-iteration-count is greater than 1). This is the default or normal value for animation-direction. 
+                    You can use the animation-direction property to change this behavior.</p>
+                    <p>The value of reverse will cause the animation to start at the 100% keyframe and work 
+                        its way to the 0% keyframe for every iteration. With the alternate value, the initial iteration and odd-numbered 
+                        iterations after that will go in the normal 0% to 100% direction, but the second iteration and every even 
+                        iteration after that will go in the reverse direction of 100% to 0%. Similarly, the alternate-reverse 
+                        animation-direction value causes the animation to alternate direction at every iteration, but it starts in reverse</p>
+                        <p><em>animation-delay</em></p>
+                        <p>The animation-delay property is used to define how many milliseconds or seconds to wait before the browser begins the animation:</p>
 
-
-
-<script type="text/javascript" src="js/main.js"></script>
+</div>
+                        <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
