@@ -48,8 +48,46 @@
         <p class="divisor"></p>
         <p class="divisor"></p>
         <h5>Transitions</h5>
-
-
+        <p>Transitions allow the values of CSS properties to change over time, essentially providing simple animations. For example, 
+            if a link changes color on hover, you can have it gradually fade from one color to the other instead of a sudden change.</p>
+        <p>CSS transitions are declared along with the regular styles on an element. Whenever the target properties change, the browser
+             will apply the transition making the change gradual.</p>
+             <p>Here are the steps to create a simple transition using only CSS:</p>
+             <ol>
+                <li>Declare the original state of the element in the default style declaration.</li>
+                <li>Declare the final state of your transitioned element; for example, a :hover state.</li>
+                <li>Include the transition functions in your default style declaration using the transition properties, including: transition-property, transition-duration, 
+                    transition-timing-function, and transition-delay. We’ll look at each of these and how they work shortly.</li>
+             </ol>
+        <h6>transition-property</h6>
+        <p>The transition-property property defines the CSS properties of the element that should be transitioned, with all for all properties being the default.</p>
+        <p>You can provide any number of CSS properties to the transition-property declaration, separated by commas. Alternatively, you can use the keyword all to 
+            indicate that every supported property should be animated as it transitions.</p>
+        <h6>The transition-duration Property</h6>
+        <p>The transition-duration property sets how long the transition will take: the duration of time it takes to go from the default state to the transitioned state. You can specify this either in seconds (s) or milliseconds (ms). 
+            We’d like our animation to be fairly quick, so we’ll specify 0.2 seconds (0.2s), or 200 milliseconds (200ms). 200ms is generally considered the optimum time for a transition: anything slower will make the website seem slow, 
+            drawing generally unwanted attention to what was supposed to be a subtle effect. Anything faster may be too subtle.</p>
+            <h6>The transition-timing-function Property</h6>
+            <p>The transition-timing-function lets you control the pace of the transition in even more granular detail. Do you want your animation to start off slow and become faster, start off fast and end slower, 
+                advance at an even keel, or some other variation?</p>
+                <p>The most common timing functions include the key terms ease, linear, ease-in, ease-out, or ease-in-out. 
+                    The default ease has a slow start, then it speeds up, and ends slowly. ease-in-out is similar to ease, 
+                    but accelerates more sharply at the beginning. linear creates a transition that animates at a constant speed. 
+                    ease-in creates a transition that is slow to start but gains speed, then stops abruptly. The opposite, ease-out, 
+                    starts at full speed, then slows progressively as it reaches the conclusion of the transition.</p>
+        <h6>The transition-delay Property</h6>
+        <p>Finally, by using the transition-delay property, it’s possible to introduce a delay before the transition begins. Normally a transition begins immediately, so the default is 0.
+             Include the number of milliseconds (ms) or seconds (s) to delay the transition. 
+             We don’t want our transition to start immediately, because that might be a bad user experience if the user accidentally 
+             mouses through our ad on the way from one part of the document to the next. A 50ms delay is enough time to wait to be sure they are 
+             intentionally hovering over our advertisement:</p>
+        <h5>Animation</h5>
+        <P>Transitions animate elements over time. You can define starting and ending states, but there’s no fine-grained control over any intermediate states. CSS animations, unlike transitions,
+             allow you to control each step of an animation via keyframes.</P>
+        <h6>keyframes</h6>
+        <p>A keyframe is a snapshot that defines a starting or end point of any smooth transition. With CSS transitions, we’re essentially limited to defining a first and a last keyframe.
+             CSS animations allow us to add any number of keyframes in between, to guide our animation in more complex ways.</p>
+        
 
 
 
