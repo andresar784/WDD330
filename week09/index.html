@@ -121,8 +121,137 @@
             although it has a number of improvements to optimize its performance. These include making the most of the browser’s built-in graphics-handling capabilities, and not running the animation when the tab is inactive, resulting in a much smoother performance.</p>
        <div id='square1'></div>
        <p>The second example runs smoother.</p>
-       
-
+    </div>
+    <div class="container-fluid">
+        <h3>Modern front end development workflow</h3>
+        <p>About this activity, it was impossible to configure the step, the <em>Npm install</em>. I run in a large amount od errors, like I shared in the <a href="https://byui.instructure.com/courses/160556/discussion_topics/4851338/topic">Discussion board</a></p>
+        <p><pre>330\week09\Boilerplate\parcel>npm install
+            npm WARN old lockfile
+            npm WARN old lockfile The package-lock.json file was created with an old version of npm,
+            npm WARN old lockfile so supplemental metadata must be fetched from the registry.
+            npm WARN old lockfile
+            npm WARN old lockfile This is a one-time fix-up, please be patient...
+            npm WARN old lockfile
+            npm WARN deprecated request-promise-native@1.0.8: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+            npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+            npm WARN deprecated har-validator@5.1.3: this library is no longer supported
+            npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+            npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+            npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+            npm WARN deprecated babel-eslint@10.1.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
+            npm WARN deprecated request@2.88.0: request has been deprecated, see https://github.com/request/request/issues/3142
+            npm WARN deprecated uuid@3.3.2: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+            npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+            npm WARN deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+            npm WARN deprecated parcel-bundler@1.12.4: Parcel v1 is no longer maintained. Please migrate to v2, which is published under the 'parcel' package. See https://v2.parceljs.org/getting-started/migration for details.
+            npm WARN deprecated core-js@2.6.5: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+            npm WARN deprecated mdn-browser-compat-data@1.0.11: mdn-browser-compat-data is deprecated. Upgrade to @mdn/browser-compat-data. Learn more: https://github.com/mdn/browser-compat-data/blob/v1.1.2/UPGRADE-2.0.x.md
+            npm ERR! code 1
+            npm ERR! path C:\BYU-I\WDD 330\week09\Boilerplate\parcel\node_modules\deasync
+            npm ERR! command failed
+            npm ERR! command C:\WINDOWS\system32\cmd.exe /d /s /c node ./build.js
+            npm ERR! gyp info it worked if it ends with ok
+            npm ERR! gyp info using node-gyp@8.3.0
+            npm ERR! gyp info using node@17.1.0 | win32 | x64
+            npm ERR! gyp ERR! find Python
+            npm ERR! gyp ERR! find Python Python is not set from command line or npm configuration
+            npm ERR! gyp ERR! find Python Python is not set from environment variable PYTHON
+            npm ERR! gyp ERR! find Python checking if "python3" can be used
+            npm ERR! gyp ERR! find Python - "python3" is not in PATH or produced an error
+            npm ERR! gyp ERR! find Python checking if "python" can be used
+            npm ERR! gyp ERR! find Python - executable path is "C:\Python27\python.exe"
+            npm ERR! gyp ERR! find Python - version is "2.7.15"
+            npm ERR! gyp ERR! find Python - version is 2.7.15 - should be >=3.6.0
+            npm ERR! gyp ERR! find Python - THIS VERSION OF PYTHON IS NOT SUPPORTED
+            npm ERR! gyp ERR! find Python checking if Python is C:\Users\Andrés\AppData\Local\Programs\Python\Python39\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Users\Andrés\AppData\Local\Programs\Python\Python39\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files\Python39\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files\Python39\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Users\Andrés\AppData\Local\Programs\Python\Python39-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Users\Andrés\AppData\Local\Programs\Python\Python39-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files\Python39-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files\Python39-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files (x86)\Python39-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files (x86)\Python39-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Users\Andrés\AppData\Local\Programs\Python\Python38\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Users\Andrés\AppData\Local\Programs\Python\Python38\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files\Python38\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files\Python38\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Users\Andrés\AppData\Local\Programs\Python\Python38-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Users\Andrés\AppData\Local\Programs\Python\Python38-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files\Python38-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files\Python38-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files (x86)\Python38-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files (x86)\Python38-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Users\Andrés\AppData\Local\Programs\Python\Python37\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Users\Andrés\AppData\Local\Programs\Python\Python37\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files\Python37\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files\Python37\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Users\Andrés\AppData\Local\Programs\Python\Python37-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Users\Andrés\AppData\Local\Programs\Python\Python37-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files\Python37-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files\Python37-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files (x86)\Python37-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files (x86)\Python37-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Users\Andrés\AppData\Local\Programs\Python\Python36\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Users\Andrés\AppData\Local\Programs\Python\Python36\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files\Python36\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files\Python36\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Users\Andrés\AppData\Local\Programs\Python\Python36-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Users\Andrés\AppData\Local\Programs\Python\Python36-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files\Python36-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files\Python36-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if Python is C:\Program Files (x86)\Python36-32\python.exe
+            npm ERR! gyp ERR! find Python - "C:\Program Files (x86)\Python36-32\python.exe" could not be run
+            npm ERR! gyp ERR! find Python checking if the py launcher can be used to find Python 3
+            npm ERR! gyp ERR! find Python - "py.exe" is not in PATH or produced an error
+            npm ERR! gyp ERR! find Python
+            npm ERR! gyp ERR! find Python **********************************************************
+            npm ERR! gyp ERR! find Python You need to install the latest version of Python.
+            npm ERR! gyp ERR! find Python Node-gyp should be able to find and use Python. If not,
+            npm ERR! gyp ERR! find Python you can try one of the following options:
+            npm ERR! gyp ERR! find Python - Use the switch --python="C:\Path\To\python.exe"
+            npm ERR! gyp ERR! find Python   (accepted by both node-gyp and npm)
+            npm ERR! gyp ERR! find Python - Set the environment variable PYTHON
+            npm ERR! gyp ERR! find Python - Set the npm configuration variable python:
+            npm ERR! gyp ERR! find Python   npm config set python "C:\Path\To\python.exe"
+            npm ERR! gyp ERR! find Python For more information consult the documentation at:
+            npm ERR! gyp ERR! find Python https://github.com/nodejs/node-gyp#installation
+            npm ERR! gyp ERR! find Python **********************************************************
+            npm ERR! gyp ERR! find Python
+            npm ERR! gyp ERR! configure error
+            npm ERR! gyp ERR! stack Error: Could not find any Python installation to use
+            npm ERR! gyp ERR! stack     at PythonFinder.fail (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-python.js:330:47)
+            npm ERR! gyp ERR! stack     at PythonFinder.runChecks (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-python.js:159:21)
+            npm ERR! gyp ERR! stack     at PythonFinder.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-python.js:228:18)
+            npm ERR! gyp ERR! stack     at PythonFinder.execFileCallback (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-python.js:294:16)
+            npm ERR! gyp ERR! stack     at ChildProcess.exithandler (node:child_process:404:5)
+            npm ERR! gyp ERR! stack     at ChildProcess.emit (node:events:390:28)
+            npm ERR! gyp ERR! stack     at maybeClose (node:internal/child_process:1062:16)
+            npm ERR! gyp ERR! stack     at Process.ChildProcess._handle.onexit (node:internal/child_process:301:5)
+            npm ERR! gyp ERR! System Windows_NT 10.0.19042
+            npm ERR! gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js" "rebuild"
+            npm ERR! gyp ERR! cwd C:\BYU-I\WDD 330\week09\Boilerplate\parcel\node_modules\deasync
+            npm ERR! gyp ERR! node -v v17.1.0
+            npm ERR! gyp ERR! node-gyp -v v8.3.0
+            npm ERR! gyp ERR! not ok
+            npm ERR! Build failed
+            
+            npm ERR! A complete log of this run can be found in:
+            npm ERR!     C:\Users\Andrés\AppData\Local\npm-cache\_logs\2021-11-11T15_00_16_892Z-debug.log</pre></p>
+            <p>I reinstalled python, and spend a lot of time trying to solve this issue.</p>
+            <p>Q, What is the usefulnes of this activity.</p>
+            <p>Note, The <em>node_modules</em> folder was created at first, but deleted when the <em>npm install</em> finishes.</p>
     </div>
  <script type="text/javascript" src="main.js"></script>
 </body>
