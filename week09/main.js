@@ -39,5 +39,56 @@ function myFunction4() {
     document.getElementById("demo5").innerHTML = x;
   }
 
+  function setCookie(cname,cvalue,exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+  function checkCookie() {
+    let user = getCookie("username");
+    if (user != "") {
+      alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+         setCookie("username", user, 30);
+       }
+    }
+  }
+//first
+const squareElement = document.getElementById('square');
+let angle = 0;
 
+setInterval( () => {
+angle = (angle + 2) % 360;
+squareElement.style.transform = `rotate(${angle}deg)`
+}, 1000/60);
 
+//second 
+const squareElement1 = document.getElementById('square1');
+let angle1 = 0;
+
+function rotate() {
+angle1 = (angle1 + 2)%360;
+squareElement1.style.transform = `rotate(${angle1}deg)`
+window.requestAnimationFrame(rotate);
+}
+const id = requestAnimationFrame(rotate);

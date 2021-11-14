@@ -5,7 +5,7 @@
     <meta charset="UTF-8" /> 
     <meta name="author" content="Andres Rodriguez Peinado">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css.styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
    
@@ -85,10 +85,44 @@
         <p>The colorDepth property can be used to find the color bit depth of the user’s monitor.</p>
         <button class="btn btn-success" onclick=myFunction7()>Do you know about your screen information?</button>
         <p></p>
-        <p id="demo5"></p>
-        
+        <p id="demo5"></p>    
+    </div>
+    <div class="container-fluid">
+        <h3>The Document Object</h3>
+        <p>Each window object contains a document object. 
+            This object has properties and methods that deal with the page that has been loaded into the window.</p>
+        <h5>document.write()</h5>
+        <p>The write() method simply writes a string of text to the page.</p>
+        <p>The document.write() method can also be used within a document inside script tags to inject a string into the markup. 
+        This will not overwrite the rest of the HTML on the page.</p>
+        <h5>Cookies</h5>
+        <p>Cookies are small files that are saved locally on a user’s computer.</p>
+        <p>Cookies can be used for personalizing a user’s browsing experience, storing user preferences, keeping track of user choices (such as a shopping cart), authentication and tracking users.</p> 
+        <p>Cookies take the form of a text file that contain a list of name/value pairs separated by semicolons. </p>
+        <button class="btn btn-warning" onclick=checkCookie()>Cookies in action..</button>
+        <p></p>
+        <p>Please, reload the page and click in the button to see the cookie in action</p>
+        <h5>Timing Functions</h5>
+        <h6>setTimeout()</h6>
+        <p>The window object provides some useful methods for scheduling the execution of a function, 
+            and for repeatedly executing functions at regular intervals</p>
+        <p>The window.setTimeout() method accepts a callback to a function as its first parameter and a 
+            number of milliseconds as its second parameter. Try entering the following example into a console.</p>
+        <h6>setInterval()</h6>
+        <p>The window.setInterval() method works in a similar way to window.setTimeout(), except that it will 
+            repeatedly invoke the callback function after every given number of milliseconds.</p>
+        <h6>Animation</h6>
+        <p>The setTimeOut() and setInterval() methods can be used to animate elements on a web page.</p>
+        <p>An example of a animation..</p>
+        <p></p>
+        <div id='square'></div>
+        <h6>requestAnimationFrame</h6>
+        <p>This method of the window object works in much the same way as the window.setInterval() method, 
+            although it has a number of improvements to optimize its performance. These include making the most of the browser’s built-in graphics-handling capabilities, and not running the animation when the tab is inactive, resulting in a much smoother performance.</p>
+       <div id='square1'></div>
+       <p>The second example runs smoother.</p>
+       
 
-    
     </div>
  <script type="text/javascript" src="main.js"></script>
 </body>
