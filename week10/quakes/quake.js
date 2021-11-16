@@ -1,4 +1,3 @@
-import { getJSON } from './utilities.js';
 
 export default class Quake {
     constructor() {
