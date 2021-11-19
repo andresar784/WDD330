@@ -1,5 +1,5 @@
 import QuakesController from './QuakesController.js';
 
-let earthquake = new QuakesController();
+const earthquake = new QuakesController('#quakeList');
 earthquake.init(); 
 
