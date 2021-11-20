@@ -71,9 +71,17 @@
         <p>maxlength. The maxlength attribute defines the maximum number of characters (as UTF-16 code units) the user can enter into an input or textarea. This must be an integer v
             alue 0 or higher.Any maxlength value must be greater than or equal to the value of minlength, if present and valid. 
             The input will fail constraint validation if the length of the text value of the field is greater than maxlength UTF-16 code units long. 
-            Constraint validation is only applied when the value is changed by the user.</p>          
+            Constraint validation is only applied when the value is changed by the user.</p> 
+            <label for="number">How many would you like?</label>
+            <input type="number" value="1" min="1" max="10">
+            <h6>This example used:</h6>
+            <p>For number fields (i.e. input type="number"), the min and max attributes
+                 can be used to provide a range of valid values. If the field contains a value outside this range, it will be invalid.</p> 
+            <p>Entered numbers outside this range will show as invalid; users won't be able to use the increment/decrement arrows to move the value outside of this range. If the user manually enters a number outside of this range,
+                 the data is invalid. The number is not required, so removing the value will still result in a valid value.</p>        
         <h5>Validating forms using JavaScript</h5>        
-         <p></p>
+         <p>You must use JavaScript if you want to take control over the look and feel of native error messages or to deal with 
+             legacy browsers that do not support HTML's built-in form validation.</p>
 
     </div>
     <div class="container-fluid">
