@@ -48,6 +48,7 @@ export default class QuakesController {
       this.position,
       100
     );
+    console.log(quakeList);
 
     // // render the list to html
     this.quakesView.renderQuakeList(quakeList, this.parentElement);
