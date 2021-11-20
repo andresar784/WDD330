@@ -12,7 +12,7 @@ export default class Quake {
     const query =
       this.baseUrl +
       `&latitude=${position.lat}&longitude=${position.lon}&maxradiuskm=${radius}`;
-    console.log(query);
+    //console.log(query);
     this._quakes = await getJSON(query);
     return this._quakes;
   }
