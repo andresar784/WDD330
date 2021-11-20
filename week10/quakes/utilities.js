@@ -1,6 +1,4 @@
-//rl). Add the code to make your function do a simple fetch 
-//request using the url argument that should get passed in, and return the response in JSON. 
-export async function getJson(url){
+export function getJSON(url){
     try {
         const response = await fetch(url);
         if (!response.ok) {

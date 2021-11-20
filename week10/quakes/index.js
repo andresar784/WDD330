@@ -1,5 +1,10 @@
 import QuakesController from './QuakesController.js';
 
-const earthquake = new QuakesController('#quakeList');
-earthquake.init(); 
+const  myQuakesController = new QuakesController('#quakeList');
+myQuakesController.init(); 
 
+
+
+
+const navElement = document.getElementById('mainNav');
+buildNavigation(navElement);
