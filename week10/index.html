@@ -50,7 +50,7 @@
         <form>
             <label >Would you prefer meat or fish?</label>
             <input  required pattern="[mM]eat|[Ff]ish">
-            <button>Submit</button>
+            <button class="btn btn-success">Submit</button>
           </form>
           <h6>This example used:</h6>
           <p>Required, The simplest HTML5 validation feature is the required attribute. To make an input mandatory, 
@@ -82,7 +82,52 @@
         <h5>Validating forms using JavaScript</h5>        
          <p>You must use JavaScript if you want to take control over the look and feel of native error messages or to deal with 
              legacy browsers that do not support HTML's built-in form validation.</p>
-
+        <h6>The Constraint Validation API</h6>
+        <p>Most browsers support the Constraint Validation API, which consists of a set of methods and properties available on the following form element DOM interfaces:</p>
+            <ul>
+                <li>HTMLButtonElement (represents a button element)</li>
+                <li>HTMLFieldSetElement (represents a fieldset element)</li>
+                <li>HTMLInputElement (represents an input element)</li>
+                <li>HTMLOutputElement (represents an output element)</li>
+                <li>HTMLSelectElement (represents a select element)</li>
+                <li>HTMLTextAreaElement (represents a textarea element)</li>
+            </ul>
+        <p>The Constraint validation API makes the following properties available on the above elements.</p>
+        <p>validationMessage: Returns a localized message describing the validation constraints that the control doesn't satisfy (if any).</p>
+        <p>validity: Returns a ValidityState object that contains several properties describing the validity state of the element.</p>
+        <p><em>patternMismatch:</em> Returns true if the value does not match the specified pattern, and false if it does match</p>
+        <p><em>tooLong: </em> Returns true if the value is longer than the maximum length specified by the maxlength attribute, 
+            or false if it is shorter than or equal to the maximum. </p>
+        <p><em>tooShort:</em> Returns true if the value is shorter than the minimum length specified by the minlength attribute, or false if it is greater than or equal to the minimum.</p>
+        <p><em>rangeOverflow:</em> Returns true if the value is greater than the maximum specified by the max attribute, or false if it is less than or equal to the maximum</p>
+        <p><em>rangeUnderflow: </em> Returns true if the value is less than the minimum specified by the min attribute, or false if it is greater than or equal to the minimum.</p>
+        <p><em>typeMismatch: </em> Returns true if the value is not in the required syntax (when type is email or url), or false if the syntax is correct.</p>
+        <p><em>valid: </em> Returns true if the element meets all its validation constraints, and is therefore considered to be valid, or false if it fails any constraint. </p>
+        <p><em>valueMissing: </em> Returns true if the element has a required attribute, but no value, or false otherwise.</p>
+        <h6>Example of using JavaScript validation.</h6>
+        <p></p>
+        <form>
+            <label for="mail">I would like you to provide me with an e-mail address:</label>
+            <input type="email" id="mail" name="mail">
+            <button class="btn btn-success">Submit</button>
+        </form>
+        <p>Here we store a reference to the email input, then add an event listener to it that runs
+             the contained code each time the value inside the input is changed. Inside the contained code, we check whether the email input's validity.typeMismatch property returns true, meaning that the contained
+              value doesn't match the pattern for a well-formed email address. If so, we call the setCustomValidity() method with a custom message. </p>
+        <p></p>
+        <form>
+            <p>
+              <label for="mail">
+                <span>Please enter an email address:</span>
+                <input type="email" id="mail2" name="mail2" required minlength="8">
+                <span class="error" aria-live="polite"></span>
+              </label>
+            </p>
+            <button class="btn btn-success"> Submit</button>
+          </form>
+          <p>This simple form uses the novalidate attribute to turn off the browser's automatic validation; this lets our script take control over validation</p>
+          <p></p>
+          
     </div>
     <div class="container-fluid">
         <h4>Using Fetch</h4>
