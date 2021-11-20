@@ -14,7 +14,64 @@
     <div class="container-fluid">
         <h3>Week 10 Notes</h3>
         <h4>Client-side form validation</h4>
+        <p>Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. This is called client-side form validation, 
+            and helps ensure data submitted matches the requirements set forth in the various form controls</p>
+        <p>Client-side validation is an initial check and an important feature of good user experience; 
+            by catching invalid data on the client-side, the user can fix it straight away.</p>
+            <p> When you enter data, the browser and/or the web server will check to see that the data is in the 
+                correct format and within the constraints set by the application. Validation done in the browser is called client-side validation, 
+                while validation done on the server is called server-side validation</p>
+            <p>If the information is correctly formatted, the application allows the data to be submitted to the server and (usually) saved in a database; if the information 
+                isn't correctly formatted, it gives the user an error message explaining what needs to be corrected, and lets them try again.</p>
+            <p>We want to make filling out web forms as easy as possible. So why do we insist on validating our forms? There are three main reasons:</p>
+            <ul>
+                <li><b>We want to get the right data, in the right format.</b> Our applications won't work properly if our users' data is stored in the wrong format, is incorrect, or is omitted altogether.</li>
+                <li><b>We want to protect our users' data.</b> Forcing our users to enter secure passwords makes it easier to protect their account information.</li>
+                <li><b>We want to protect ourselves.</b> There are many ways that malicious users can misuse unprotected forms to damage the application.</li>
+            </ul>
         <h5>Using built-in form validation</h5>
+        <p>Built-in form validation uses HTML5 form validation features, which we've discussed in many places throughout this module. This validation generally doesn't require much JavaScript. 
+            Built-in form validation has better performance than JavaScript, but it is not as customizable as JavaScript validation.</p>
+        <p>One of the most significant features of HTML5 form controls is the ability to validate most user data without relying on JavaScript.
+             This is done by using validation attributes on form elements</p>
+        <ul>
+            <li><b><em>required: </em></b> Specifies whether a form field needs to be filled in before the form can be submitted.</li>
+            <li><b><em>minlength</em></b> and <b><em>maxlength:</em></b> Specifies the minimum and maximum length of textual data (strings).</li>
+            <li><b><em>min</em></b> and <b><em> max: </em></b> Specifies the minimum and maximum values of numerical input types.</li>
+            <li><b><em>type: </em></b>Specifies whether the data needs to be a number, an email address, or some other specific preset type.</li>
+            <li><b><em>pattern: </em></b> Specifies a regular expression that defines a pattern the entered data needs to follow.</li>
+        </ul>
+        <p>When an element is valid, the following thing are true: </p>
+        <p>The element matches the :valid CSS pseudo-class, which lets you apply a specific style to valid elements.</p>
+        <p>When an element is invalid, the followinf thing are true: </p>
+        <p>The element matches the :invalid CSS pseudo-class, and sometimes other UI pseudo-classes (e.g., :out-of-range)
+             depending on the error, which lets you apply a specific style to invalid elements.</p>
+        <h6>Some examples.</h6>
+        <form>
+            <label >Would you prefer meat or fish?</label>
+            <input  required pattern="[mM]eat|[Ff]ish">
+            <button>Submit</button>
+          </form>
+          <h6>This example used:</h6>
+          <p>Required, The simplest HTML5 validation feature is the required attribute. To make an input mandatory, 
+              add this attribute to the element. When this attribute is set, the element matches the :required UI 
+              pseudo-class and the form won't submit, displaying an error message on submission when the input is empty. 
+              While empty, the input will also be considered invalid, matching the :invalid UI pseudo-class.</p>
+        <p>A regular expression, Another useful validation feature is the pattern attribute, which expects a Regular Expression as its value. A regular expression (regex) is a pattern that can be used to
+             match character combinations in text strings, so regexps are ideal for form validation and serve a variety of 
+             other uses in JavaScript.</p>
+             <form>
+            <label>Enter a word of minimum of 6 letters and maximum of 8..</label>
+            <input type="text" minlength="6" maxlength="8">
+        </form>
+        <h6>This example used:</h6>
+        <p>minlength. The minlength attribute defines the minimum number of characters (as UTF-16 code units) the user can enter into an input or textarea. 
+            This must be an integer value 0 or higher.
+             If no minlength is specified, or an invalid value is specified, the input has no minimum length.</p>
+        <p>maxlength. The maxlength attribute defines the maximum number of characters (as UTF-16 code units) the user can enter into an input or textarea. This must be an integer v
+            alue 0 or higher.Any maxlength value must be greater than or equal to the value of minlength, if present and valid. 
+            The input will fail constraint validation if the length of the text value of the field is greater than maxlength UTF-16 code units long. 
+            Constraint validation is only applied when the value is changed by the user.</p>          
         <h5>Validating forms using JavaScript</h5>        
          <p></p>
 
@@ -23,7 +80,6 @@
         <h4>Using Fetch</h4>
     </div>
     <div class="container p-3 my-3 bg-dark text-white">
-        <p>Hello how are you</p>
         <a href="quakes\earthquake.html">Earthquake near of me activity</a>
     </div>
 

@@ -1,0 +1,13 @@
+input:invalid {
+    border: 2px solid red;
+  }
+  
+  input:valid {
+    border: 2px solid rgb(51, 216, 172);
+  }
+  
+  input:invalid:required {
+    background-image: linear-gradient(to right, rgb(107, 210, 228), rgb(146, 116, 102));
+  }
+  
+  
