@@ -1,4 +1,4 @@
-//import { getLocation } from './utilities.js';
+import { getLocation } from './utilities.js';
 import Quake from './Quake.js';
 import QuakesView from './QuakesView.js';
 
@@ -28,11 +28,11 @@ export default class QuakesController {
     if (this.position.lat === 0) {
       try {
         // try to get the position using getLocation()
-        //const posFull = await getLocation();
+        const posFull = await getLocation();
 
         // if we get the location back then set the latitude and longitude into this.position
-        this.position.lat = 28.09973; //posFull.coords.latitude;
-        this.position.lon = -15.41343;//posFull.coords.longitude;
+        this.position.lat = posFull.coords.latitude;
+        this.position.lon = posFull.coords.longitude;
         console.log(posFull);
       } catch (error) {
         console.log(error);
