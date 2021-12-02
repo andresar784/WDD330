@@ -7,6 +7,8 @@ let modelBtn = document.getElementById('modelBtn');
 //the year select element
 let years
 let yearBtn = document.getElementById('yearBtn');
+//the last button to consult something
+let lastButton = document.getElementById('lastButton');
 
 flag.addEventListener('click', () => {
     let typeOfVehicles =  document.querySelector('#type');
@@ -79,6 +81,34 @@ modelBtn.addEventListener('click', () => {
         console.log(mods);
         for (let mod of mods.anos){
             var x = document.createElement("OPTION");
+            x.setAttribute("value", mod.codigo);
+            var t = document.createTextNode(mod.nome);
+            x.appendChild(t);
+            document.getElementById("year").appendChild(x);
+        }
+    } )
+    }
+    )
+//function the get the last result, the price
+lastButton.addEventListener('click', () => {
+    let typeOfVehicles =  document.querySelector('#type');
+    let brandOfV =  document.querySelector('#brands');
+    let codigo = brandOfV.value
+    let vehicle = typeOfVehicles.value;
+    let urlconsult = `https://parallelum.com.br/fipe/api/v1/${vehicle}/marcas/${codigo}/modelos/5940/anos/2014-3`;
+     console.log(urlModels);
+     fetch(urlModels)
+     .then( Response => {
+        if(Response.ok){
+            return Response;
+        }
+        throw Error(Response.statusText);
+    })
+    .then(response => response.json())
+    .then( mods => {
+        console.log(mods);
+        for (let mod of mods.anos){
+            var x = document.createElement("OPTION");
             x.setAttribute("value", mod.nome);
             var t = document.createTextNode(mod.nome);
             x.appendChild(t);
@@ -87,7 +117,6 @@ modelBtn.addEventListener('click', () => {
     } )
     }
     )
-        
         
 
   
