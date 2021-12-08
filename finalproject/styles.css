@@ -8,3 +8,7 @@ h5 {
     height: 50px;
     background-size: 70px 50px;
 }
+
+#infoDiv{
+    font-weight: bolder;
+}

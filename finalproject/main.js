@@ -1,11 +1,8 @@
 let flag = document.getElementById('flag');
-
 let brands = document.getElementById('brands');
 //the model select element
 let models = document.getElementById('models'); 
 let modelBtn = document.getElementById('modelBtn');
-//the year select element
-let years
 let yearBtn = document.getElementById('yearBtn');
 //the last button to consult something
 let lastButton = document.getElementById('lastConsult');
@@ -30,6 +27,7 @@ flag.addEventListener('click', () => {
             var t = document.createTextNode(marca.nome);
             x.appendChild(t);
             document.getElementById("brands").appendChild(x);
+            brands.disabled = false;
         }
      }
 )})
@@ -57,6 +55,7 @@ modelBtn.addEventListener('click', () => {
             var t = document.createTextNode(mod.nome);
             x.appendChild(t);
             document.getElementById("models").appendChild(x);
+            models.disabled = false;
         }
     } )
     }
@@ -85,6 +84,7 @@ modelBtn.addEventListener('click', () => {
             var t = document.createTextNode(mod.nome);
             x.appendChild(t);
             document.getElementById("year").appendChild(x);
+            year.disabled = false; 
         }
     } )
     }
@@ -116,9 +116,10 @@ lastButton.addEventListener('click', () => {
     })
     .then(response => response.json())
     .then( mods => {
+        console.log(mods)
         var x = document.createElement("DIV");
         x.setAttribute("name", mods.Valor);
-        var t = document.createTextNode(mods.Valor);
+        var t = document.createTextNode(`The value of ` + mods.Modelo + ' year ' + mods.AnoModelo + ' is: ' + mods.Valor);
         x.appendChild(t);
         document.getElementById("infoDiv").appendChild(x);
         }
