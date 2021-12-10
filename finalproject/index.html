@@ -10,47 +10,64 @@
   
 </head>
 <body>
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <div class="row">
-          <div class="col">
-            
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-          <div class="col-6">
-            <h5>Here you can consult the price of brasilian cars..</h5>
-            <label for="type">Select a type of vehicle</label>
-            <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="type" id="type">
+    </div>
+</nav>
+<!-- Page content-->
+<div class="container">
+  <div class="text-center mt-5">
+      <h5>Here you can consult the price of brasilian cars..</h5>
+          <label for="type">Select a type of vehicle</label>
+             <select class="form-select" name="type" id="type">
               <option value="carros">Car</option>
               <option value="caminhoes">Truck</option>
-              <option value="motos">Motorcylce</option>
-            </select>
-            <button class="flag" id="flag">Select a brand</button>
-            <p></p>
-            
-            <label>Select a brand</label>
-            <select class="form-select" name="brands" id="brands">
-              <option value="" disabled>-Select a brand-</option>
-            </select>
-            <button class="flag" id="modelBtn">Select a model</button>
-            <p></p>
-            <label for="model">Select a model</label>
-            <select id="models" class="form-select-lg mb-3" disabled>
-              <option value="" disabled>-Select a model-</option>
-            </select>
-            <button class="flag" id="yearBtn">Select a Year</button>
-            <p></p>
-            <label for="year">Select year</label>
-            <select id="year" disabled>
-              <option value="" disabled>Select year</option>
-            </select>
-            
-            <p></p>
-            <button class="flag" id="lastConsult">Consult last</button>
-            <p></p>
-            <div id="infoDiv"></div>
-          </div>
-          <div class="col">
-          </div>
-        </div>
+             <option value="motos">Motorcylce</option>
+             </select>
+          <button class="btn" id="flag">Select a brand</button>
+          <p></p>
+          <label>Select a brand</label>
+           <select class="form-select" name="brands" id="brands">
+           <option value="" disabled>-Select a brand-</option>
+          </select>
+            <button class="btn" id="modelBtn">Select a model</button>
+          <p></p>
+          <label for="model">Select a model</label>
+          <select class="form-select" id="models" disabled>
+           <option value="" disabled>-Select a model-</option>
+        </select>
+       <button class="btn" id="yearBtn">Select  Year</button>
+     <p></p>
+     <label for="year">Select year</label>
+      <select class="form-select" id="year" disabled>
+        <option value="" disabled>Select year</option>
+      </select>
+      <p></p>
+      <button class="btn" id="lastConsult">Get the price</button>
+      <p></p>
+   <div id="infoDiv"></div>
+    </div>
+  </div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
