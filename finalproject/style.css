@@ -1,7 +1,15 @@
 h5 {
     text-align: center;
 }
+
+select{
+  text-align: center;
+  text-align-last: center;
+  -moz-text-align-last: center;
   
+}
+
+
 .btn {
     width: 180px;
     height: 60px;
