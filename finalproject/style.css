@@ -22,7 +22,7 @@ select{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   animation-name: interact;
-  animation-duration: 800ms ;
+  animation-duration: 1500ms ;
   animation-iteration-count: infinite;
   border-left: 8px solid rgb(98, 173, 100);
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
