@@ -23,7 +23,7 @@ select{
     cursor: pointer;
     background-color: salmon;
     border: 1px solid #91C9FF;
-    outline: none;
+    outline: thick ridge rgb(99, 148, 211);
     transition: 1s ease-in-out;
   }
   
