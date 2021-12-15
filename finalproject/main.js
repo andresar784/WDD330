@@ -118,7 +118,7 @@ lastButton.addEventListener('click', () => {
         console.log(mods)
         var x = document.createElement("DIV");
         x.setAttribute("name", mods.Valor);
-        var t = document.createTextNode(`The value of ` + mods.Marca + ' ' + mods.Modelo + ' year ' + mods.AnoModelo + ' is: ' + mods.Valor);
+        var t = document.createTextNode(`The value of ${mods.Modelo} is: ${mods.Valor}`);
         x.appendChild(t);
         document.getElementById("infoDiv").appendChild(x);
         }

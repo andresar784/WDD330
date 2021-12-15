@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   
@@ -18,7 +19,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                
                 <li class="nav-item"><a class="nav-link" href="notes.html" >Notes</a></li>
                 
             </ul>
@@ -35,24 +36,24 @@
               <option value="caminhoes">Truck</option>
              <option value="motos">Motorcylce</option>
              </select>
-          <button class="btn" id="flag">Select a brand</button>
+          <button class="btn" id="flag" >Select a brand <i class="fa fa-hand-o-down"  style="font-size:20px"></i></button>
          
            <select class="form-select" name="brands" id="brands">
            <option value="" disabled>-Select a brand-</option>
           </select>
-            <button class="btn" id="modelBtn">Select a model</button>
+            <button class="btn" id="modelBtn">Select a model <i class="fa fa-hand-o-down"  style="font-size:24px"></i></button>
           
           <label for="model"></label>
           <select class="form-select" id="models" disabled>
            <option value="" disabled>-Select a model-</option>
         </select>
-       <button class="btn" id="yearBtn">Select  Year</button>
+       <button class="btn" id="yearBtn">Select  Year <i class="fa fa-hand-o-down"  style="font-size:24px"></i></button>
     
      <label for="year"></label>
       <select class="form-select" id="year" disabled>
         <option value="" disabled>Select year</option>
       </select>
-      <button class="btn" id="lastConsult">Get the price</button>
+      <button class="btn" id="lastConsult">Get the price <i class="fa fa-money"  style="font-size:20px"></i></button>
       <p></p>
    <div id="infoDiv"></div>
    <p></p>
