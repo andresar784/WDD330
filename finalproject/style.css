@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .container {
   background-color: rgb(235, 248, 147);
 }
+
 h5 {
     text-align: center;
 }
@@ -15,6 +18,21 @@ select{
   -moz-text-align-last: center;
 }
 
+.form-select:hover{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.50s;
+  border-left: 8px solid rgb(98, 173, 100);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@keyframes example {
+  0%   {border-left: 3px solid #009C3B;}
+  25%  {border-left: 4px solid #FFDF00;}
+  50%  {border-left: 5px solid #002776;}
+  100% {border-left: 6px solid #FFFFFF;}
+}
 
 
 .btn {
@@ -53,6 +71,9 @@ select{
     font-weight: 100;
   }
 
-  #infoDiv{
+#infoDiv{
+    font-family: 'Roboto', sans-serif;
     font-weight: bolder;
+
 }
+
