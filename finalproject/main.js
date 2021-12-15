@@ -48,7 +48,7 @@ modelBtn.addEventListener('click', () => {
     })
     .then(response => response.json())
     .then( mods => {
-        console.log(mods);
+        console.log('anos esperrados' + mods);
         for (let mod of mods.modelos){
             var x = document.createElement("OPTION");
             x.setAttribute("value", mod.codigo);
@@ -66,7 +66,9 @@ modelBtn.addEventListener('click', () => {
     let brandOfV =  document.querySelector('#brands');
     let codigo = brandOfV.value
     let vehicle = typeOfVehicles.value;
-     let urlModels = `https://parallelum.com.br/fipe/api/v1/${vehicle}/marcas/${codigo}/modelos`;
+    let modelcode = document.querySelector('#models');
+    let modelcodeN = modelcode.value;
+     let urlModels = `https://parallelum.com.br/fipe/api/v1/${vehicle}/marcas/${codigo}/modelos/${modelcodeN}/anos`;
      console.log(urlModels);
      fetch(urlModels)
      .then( Response => {
@@ -78,7 +80,7 @@ modelBtn.addEventListener('click', () => {
     .then(response => response.json())
     .then( mods => {
         console.log(mods);
-        for (let mod of mods.anos){
+        for (let mod of mods){
             var x = document.createElement("OPTION");
             x.setAttribute("value", mod.codigo);
             var t = document.createTextNode(mod.nome);
@@ -118,7 +120,7 @@ lastButton.addEventListener('click', () => {
         console.log(mods)
         var x = document.createElement("DIV");
         x.setAttribute("name", mods.Valor);
-        var t = document.createTextNode(`The value of ${mods.Modelo} is: ${mods.Valor}`);
+        var t = document.createTextNode(`The value of ${mods.Modelo} year ${mods.AnoModelo} is: ${mods.Valor}`);
         x.appendChild(t);
         document.getElementById("infoDiv").appendChild(x);
         }
